@@ -5,6 +5,7 @@ angular.module('myApp.controllers', []).
     
     AngularIssues.get(function(response) {
       // Assign the response INSIDE the callback
+      console.log(response);
       $scope.data.issues = response;
     });
   }])
