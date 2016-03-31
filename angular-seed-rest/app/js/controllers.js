@@ -3,7 +3,7 @@ angular.module('myApp.controllers', []).
     // Instantiate an object to store your scope data in (Best Practices)
     $scope.data = {};
     
-    AngularIssues.get(function(response) {
+    AngularIssues.query(function(response) {
       // Assign the response INSIDE the callback
       console.log(response);
       $scope.data.issues = response;
